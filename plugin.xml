@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.nd.screeninformation"
+  version="1.0.0">
+
+  <name>Screen Information</name>
+  <description>A cordova plugin to get the details of android device screen</description>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0"/>
+  </engines>
+
+  <asset src="www/ScreenInformation.js" target="js/ScreenInformation.js"/>
+
+  <js-module src="www/ScreenInformation.js" name="ScreenInformation">
+    <clobbers target="ScreenInformation" />
+  </js-module>
+
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="ScreenInformation">
+        <param name="android-package" value="com.nd.ScreenInformation"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/com/nd/ScreenInformation.java" target-dir="src/com/nd" />
+  </platform>
+
+</plugin>
