@@ -5,7 +5,7 @@ This cordova plugin is usefull to get device screen information.
 ## Installation
 
 ```
-cordova plugin add https://github.com/nayan-dabhi/Cordova_Plugin_ScreenInformation
+cordova plugin add https://github.com/nayan-dabhi/cordova_plugin_screeninformation
 ```
 
 ## Supported Platforms
