@@ -28,7 +28,7 @@ The plugin return a screen information JSON object.
 Return values:
 
 * `density_point` - Number (screen density dpi point)
-* `density_name` - Number (screen density dpi name)
+* `density_name` - String (screen density dpi name)
 * `width` - Number (screen width in pixels)
 * `height` - Number (screen width in pixels)
 * `xdpi` - Number (pixels per inch of the screen in the X axis)
